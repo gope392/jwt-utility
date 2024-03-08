@@ -29,6 +29,7 @@ def validate_jwt(jwt_token, secret):
 
 def read_secret(filepath):
     try:
+        # Read hex string secret
         with open(filepath, 'r') as file:
             secret = file.read()
             return secret
