@@ -37,12 +37,12 @@ def read_secret(filepath):
         print(e)
 
 # Validate input data
-input_data = os.environ.get('input_data')
+input_data = os.environ.get('INPUT_DATA')
 if not input_data:
     print('Empty input data. Exiting')
     exit()
 else:
-    secret = read_secret('secret.txt')
+    secret = read_secret('/run/secrets/jwt_secret')
     jwt_token = generate_jwt(input_data, secret)
     validate_jwt(jwt_token, secret)
 

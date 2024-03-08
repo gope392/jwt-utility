@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  jwt_util:
+    container_name: jwt_utility
+    image: gope/jwt-util:latest
+    environment:
+      INPUT_DATA: 'input de prueba'
+    secrets:
+      - jwt_secret
+secrets:
+  jwt_secret:
+    file: ./secret.txt
+
