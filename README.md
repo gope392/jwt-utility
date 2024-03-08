@@ -1,5 +1,9 @@
 # Jwt-utility:
-Basic JWT utility that allows to generate and validate tokens implemented in Python 3.
+Basic JWT utility that allows to generate and validate tokens implemented in Python 3 :snake:
+
+### Tested with:
+- Docker `version 24.0.5, build 24.0.5-0ubuntu1~22.04.1`
+- Docker Compose `version 1.29`
 
 ### Configuration:
 Running this utility requires a few parameters configuration.
