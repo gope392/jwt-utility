@@ -2,8 +2,10 @@ version: '3.8'
 
 services:
   jwt_util:
+    build:
+      context: .
+      dockerfile: Dockerfile  
     container_name: jwt_utility
-    image: gope/jwt-util:latest
     environment:
       INPUT_DATA: 'input de prueba'
     secrets:
