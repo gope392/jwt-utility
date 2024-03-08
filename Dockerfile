@@ -12,4 +12,4 @@ RUN pip3 install --no-cache-dir -r requirements.txt
 
 COPY . /jwt-utility/
 
-CMD ["python3", "jwtutil.py"]
+CMD ["python3", "./src/jwtutil.py"]
